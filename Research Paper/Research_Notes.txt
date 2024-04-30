@@ -1,0 +1,13 @@
+### Goal:
+, we propose a new approach to code generation by
+LLMs, which we call AlphaCodium - a test-based, multistage, code-oriented iterative flow, that improves the performances of LLMs on code problems
+
+
+### TEST METHODOLOGY:
+We tested AlphaCodium
+on a challenging code generation dataset called CodeContests, which includes competitive programming problems
+from platforms such as Codeforces. The proposed flow consistently and significantly improves results
+
+
+### Result & Evaluation Metrics
+

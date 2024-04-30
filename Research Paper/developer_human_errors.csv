@@ -1,0 +1,815 @@
+ID,SOURCE,COMMENT_URL,COMMENT_TEXT,HUMAN_ERROR_TYPE,THESE_V4_ID,THESE_NAME
+HE_000,Issue,https://github.com/mono/CppSharp/issues/814#issuecomment-293240256,"I'm sorry, I should have taken care of this too I think.
+
+Am 11.04.2017 14:00 schrieb ""João Matos"" <notifications@github.com>:
+…
+ For a more long-term solution, we can generate a C# file at build time,
+ say BuildInformation.cs or something which provides the preferred VS
+ version (according to the VS action used by Premake). We can also store
+ extra data in the future like the Git revisions for C++#, LLVM and Clang to
+ aid troubleshooting issues.
+
+ —
+ You are receiving this because you are subscribed to this thread.
+ Reply to this email directly, view it on GitHub
+ <#814 (comment)>, or mute
+ the thread
+ <https://github.com/notifications/unsubscribe-auth/AYPM8Mx2TDMniwSjLIJUoG8AEcKcXfaQks5ru2tRgaJpZM4M53-z>
+ .",Lapse,L01,Forgetting to Finish a Development Task
+HE_001,Pull Request,https://github.com/mattermost/mattermost-server/pull/4803#issuecomment-272026454,"Ah, sorry @jurgenhaas - I thought it was included with f20d46f
+Will re-build the test server, thanks!",Lapse,L04,Working With Outdated Source Code
+HE_002,Issue,https://github.com/NativeScript/NativeScript/issues/783#issuecomment-150265112,"@N3ll -- Sorry, I haven't had a chance since we last spoke to do anything more than verify it still occurs with v1.4 of the runtimes. The weird thing is that it only occurs with one of my test apps; not the others.
+So I'm not sure the cause yet.  I'll be making a repo for the test app soon as it is related to that other project that is on Google docs -- I just haven't had time to clean it up and remove all my ""extra"" test stuff from the source code since I want that repo to be as clean as possible for new developers.
+I have downloaded the new Geny, but I haven't installed it.   Too many projects going and not enough time.
+Don't close this issue; it is still occurring; just not sure why as I tried to take the same app that you use and make changes to make it have the same number of fields, opening dialogs, etc.  Hmm, it just dawned on me of one change; I do have a custom fonts in this project -- I'll have to see if rendering a custom font has something to do with the issue...",Lapse,L04,Working With Outdated Source Code
+HE_003,Pull Request,https://github.com/video-dev/hls.js/pull/2623#issuecomment-727022831,"Hi @gkolb,
+Sorry I didn't get around to merging in these changes earlier. There have been some changes made from the LL-HLS work. Please rebase or merge the changes from video-dev:feature/v1.0.0  into your branch.
+I never received a response to the request for a sample stream, so if I don't hear back, I'll be going with @victor-at-work's contribution and then work on getting those changes merged into v1 from master rather than this PR - provided everything checks out in terms of feature comparison with Safari <video src=''> playback and testing.
+Thanks!",Lapse,L04,Working With Outdated Source Code
+HE_004,Issue,https://github.com/openvinotoolkit/cvat/issues/3300#issuecomment-870599130,"Hi @kirill-sizov,
+Apologies for being a bit late, and thank you for your time.
+I loaded the latest version of the develop branch and the issue seems to have been resolved.
+I tested by exporting to CVAT video, CVAT images, YOLO and COCO. All seemed to work properly.
+Thanks again",Lapse,L04,Working With Outdated Source Code
+HE_005,Issue,https://github.com/hashicorp/terraform/issues/27519#issuecomment-764915058,"k - updated and -raw works as documented, sorry for the noise!",Lapse,L04,Working With Outdated Source Code
+HE_006,Pull Request,https://github.com/hrydgard/ppsspp/pull/70#issuecomment-10601103,"@Orphis, sorry, didn't mean to cause any problems.
+I've actually only been using git for a little while now.  I tried rebasing first, but it meant I had to do a forced push which makes it hard for me to work from another computer.  Not sure what the right way to do it is?  Should I just give in and do a force push right before the pull?
+Also, darn, I broke the debug build with the assert I added.  I forgot I was still on Release because that's what test.py uses.  Sorry.
+-[Unknown]",Lapse,L04,Working With Outdated Source Code
+HE_007,Issue,https://github.com/randym/axlsx/issues/446#issuecomment-182778464,"Ops sorry, I guess I got confused with 2.0.1 and 2.1.0.
+Any plans to release the 2.1.0 version? I see that it's been published as pre since March 2015.
+Thanks!",Lapse,L04,Working With Outdated Source Code
+HE_008,Issue,https://github.com/kubernetes-sigs/metrics-server/issues/73#issuecomment-402135946,"@DirectXMan12 this was my fault.
+As i did not know the correct architecure of my system. The new Raspberry pi 3 B+ is arm64 compatible, but the raspbian os is not. It is armv7l.
+After running the right image of metrics-server it became healthy.
+Yet i don't see it working correctly on my raspberrys.
+kubectl top nodes is looking for heapster instead of the metrics-server.
+Somewhere you wrote this was fixed for 1.10 of kubernetes, i'm running 1.9.7 since newer versions crash on raspbian.
+$ kubectl top nodes
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+
+$ kubectl top nodes --v=10
+I0703 14:19:17.259759    7592 loader.go:357] Config loaded from file /home/pi/.kube/config
+I0703 14:19:17.281584    7592 round_trippers.go:417] curl -k -v -XGET  -H ""Accept: application/json, */*"" -H ""User-Agent: kubectl/v1.9.7 (linux/arm) kubernetes/dd5e1a2"" https://192.168.178.43:6443/api/v1/namespaces/kube-system/services/http:heapster:/proxy/apis/metrics/v1alpha1/nodes?labelSelector=
+I0703 14:19:17.456810    7592 round_trippers.go:436] GET https://192.168.178.43:6443/api/v1/namespaces/kube-system/services/http:heapster:/proxy/apis/metrics/v1alpha1/nodes?labelSelector= 404 Not Found in 175 milliseconds
+I0703 14:19:17.464052    7592 round_trippers.go:442] Response Headers:
+I0703 14:19:17.464115    7592 round_trippers.go:445]     Content-Type: application/json
+I0703 14:19:17.464162    7592 round_trippers.go:445]     Content-Length: 192
+I0703 14:19:17.464207    7592 round_trippers.go:445]     Date: Tue, 03 Jul 2018 12:19:17 GMT
+I0703 14:19:17.464583    7592 request.go:873] Response Body: {""kind"":""Status"",""apiVersion"":""v1"",""metadata"":{},""status"":""Failure"",""message"":""services \""heapster\"" not found"",""reason"":""NotFound"",""details"":{""name"":""heapster"",""kind"":""services""},""code"":404}
+I0703 14:19:17.466142    7592 helpers.go:201] server response object: [{
+  ""metadata"": {},
+  ""status"": ""Failure"",
+  ""message"": ""the server could not find the requested resource (get services http:heapster:)"",
+  ""reason"": ""NotFound"",
+  ""details"": {
+    ""name"": ""http:heapster:"",
+    ""kind"": ""services"",
+    ""causes"": [
+      {
+        ""reason"": ""UnexpectedServerResponse"",
+        ""message"": ""unknown""
+      }
+    ]
+  },
+  ""code"": 404
+}]
+F0703 14:19:17.466324    7592 helpers.go:119] Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+
+$ kubectl describe pod metrics-server-5d6fbcb-psc52 -n kube-system
+Name:           metrics-server-5d6fbcb-psc52
+Namespace:      kube-system
+Node:           kube-node2/192.168.178.45
+Start Time:     Tue, 03 Jul 2018 13:25:06 +0200
+Labels:         k8s-app=metrics-server
+                pod-template-hash=1829676
+Annotations:    <none>
+Status:         Running
+IP:             10.244.2.31
+Controlled By:  ReplicaSet/metrics-server-5d6fbcb
+Containers:
+  metrics-server:
+    Container ID:  docker://71b00be4b8085149366808f09634535d579bd87729151919cd7bc762e7abd83e
+    Image:         gcr.io/google_containers/metrics-server-arm:v0.2.1
+    Image ID:      docker-pullable://gcr.io/google_containers/metrics-server-arm@sha256:0aeffad68e394b126e114d67f3d9554fe0878ea4ef0dddde9e2c07cdcd73f8eb
+    Port:          <none>
+    Command:
+      /metrics-server
+      --source=kubernetes.summary_api:''
+    State:          Running
+      Started:      Tue, 03 Jul 2018 13:59:48 +0200
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 03 Jul 2018 13:25:17 +0200
+      Finished:     Tue, 03 Jul 2018 13:57:42 +0200
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from metrics-server-token-x2kn4 (ro)
+Conditions:
+  Type           Status
+  Initialized    True
+  Ready          True
+  PodScheduled   True
+Volumes:
+  metrics-server-token-x2kn4:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  metrics-server-token-x2kn4
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                  Age               From                 Message
+  ----     ------                  ----              ----                 -------
+  Normal   Scheduled               36m               default-scheduler    Successfully assigned metrics-server-5d6fbcb-psc52 to kube-node2
+  Normal   SuccessfulMountVolume   36m               kubelet, kube-node2  MountVolume.SetUp succeeded for volume ""metrics-server-token-x2kn4""
+  Normal   Pulling                 36m               kubelet, kube-node2  pulling image ""gcr.io/google_containers/metrics-server-arm:v0.2.1""
+  Normal   Pulled                  36m               kubelet, kube-node2  Successfully pulled image ""gcr.io/google_containers/metrics-server-arm:v0.2.1""
+  Normal   Created                 36m               kubelet, kube-node2  Created container
+  Normal   Started                 36m               kubelet, kube-node2  Started container
+  Normal   SuccessfulMountVolume   3m                kubelet, kube-node2  MountVolume.SetUp succeeded for volume ""metrics-server-token-x2kn4""
+  Normal   SandboxChanged          2m (x12 over 3m)  kubelet, kube-node2  Pod sandbox changed, it will be killed and re-created.
+  Warning  FailedCreatePodSandBox  2m (x12 over 3m)  kubelet, kube-node2  Failed create pod sandbox.",Lapse,L04,Working With Outdated Source Code
+HE_009,Issue,https://github.com/atom/atom/issues/13296#issuecomment-262759899,"Hey, This issue has been fixed on master and will go out with the next hotfixes which will be Atom 1.12.6. What @Zafar97 meant was that he installed Atom 1.12.1 and that version worked for him.
+Sorry for the inconvenience.",Lapse,L04,Working With Outdated Source Code
+HE_010,Issue,https://github.com/open62541/open62541/issues/2352#issuecomment-452201794,"You are right. Turns out I was using a version previous to this commit 560f685.
+Sorry for the mistake, I'll close the issue.",Lapse,L04,Working With Outdated Source Code
+HE_011,Issue,https://github.com/nextcloud/ios/issues/1240#issuecomment-643740519,"yes sorry, a little bug, roll back it next build  :-)",Lapse,L04,Working With Outdated Source Code
+HE_012,Issue,https://github.com/hashicorp/vagrant/issues/4931#issuecomment-66523863,"This is a bug in the latest version of Vagrant as a result of open sourcing vagrant-login. This will be fixed when we release a new Vagrant installer /cc @mitchellh
+Sorry about that.",Lapse,L04,Working With Outdated Source Code
+HE_013,Issue,https://github.com/PowerDNS/pdns/issues/4479#issuecomment-247531802,"Sorry, I did this to protect some information.
+root@ns2:~ # curl -X PATCH --data '{""rrsets"": [ {""name"":""cherry.sparrowdesk.com."", ""type"":""MX"", ""ttl"":300, ""changetype"":""REPLACE"", ""records"": [ {""name"":""cherry.sparrowdesk.com"", ""type"":""MX"", ""content"":""mta1.sparrowdesk.com"", ""disabled"":false, ""priority"": 10 } ] } ] }' -H 'X-API-Key: CherrySGP1' http://10.10.10.1:8081/api/v1/servers/localhost/zones/sparrowdesk.com | jq .
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Dload  Upload   Total   Spent    Left  Speed
+100   410  100   178  100   232   3047   3972 --:--:-- --:--:-- --:--:--  4218
+{
+""error"": ""Record cherry.sparrowdesk.com./MX 'mta1.sparrowdesk.com': Parsing record content (try 'pdnsutil check-zone'): expected digits at position 0 in 'mta1.sparrowdesk.com'""
+}
+root@ns2:~ #
+root@ns2:~ # pdns_control version
+4.0.1
+root@ns2:~ #",Lapse,L04,Working With Outdated Source Code
+HE_014,Issue,https://github.com/dotnet/roslyn-analyzers/issues/2409#issuecomment-630953310,That worked! Sorry I hadn't noticed there was a newer version.,Lapse,L04,Working With Outdated Source Code
+HE_015,Pull Request,https://github.com/tensorflow/tensorflow/pull/3643#issuecomment-241561113,"@sdenel It looks like you have to rebase again to pick up the changes I pushed earlier to day, sorry about the duplicate work.",Lapse,L04,Working With Outdated Source Code
+HE_016,Issue,https://github.com/AaronJackson/vrn/issues/8#issuecomment-332746828,"Sorry, I should have said require 'fb.python' not pytorch. Requiring pytorch should actually have given you an error since this is not a Torch library but a python library.",Lapse,L05,Forgetting an Import Statement
+HE_017,Issue,https://github.com/OpenEmu/OpenEmu/issues/4048#issuecomment-560172331,"Sure, I can go this route. I was reluctant since I will have to manually import the games to a fresh library, re-add all (custom) artwork, and recreate my custom collections.
+I regret not backing up my DB files before clicking the Change and Reset buttons. Part of the issue is that I was not sure what path to use for the library (e.g.., OpenEmu, OpenEmu/Game Library, or something else). And if I was in ~/Library/Application Support/OpenEmu/Game Library and I changed it to an external location /path/OpenEmu/Game Library, then I was left with /path/OpenEmu/Game Library/Game Library. I caused corruption somewhere with all the button clicking.
+I'll stick with manually recreating the library from a fresh instance, as mentioned above. Thanks for the feedback and support.",Lapse,L06,Forgetting to Save Work
+HE_018,Pull Request,https://github.com/django/django/pull/12350#issuecomment-579170908,"Oops, I thought I pushed my fix 5 days ago but I didn't. I pushed it now.  @adamchainz can you please review?",Lapse,L06,Forgetting to Save Work
+HE_019,Pull Request,https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks/pull/462#issuecomment-397609561,"Sorry to trouble you @nik0 but I don't think this commit does contain the system() changes. I'm seeing the same issue with the hanging, but also I see this is in the log:
+2018-06-15 13:23:50.811 (9803.023s) [ivsMoveDetection]         ImpEncoder.cpp:774      0| Detect !!
+2018-06-15 13:23:52.812 (9805.023s) [ivsMoveDetection]         ImpEncoder.cpp:570      0| Will execute command /system/sdcard/scripts/detectionOff.sh
+Running: /system/sdcard/config/userscripts/motiondetection/x.sh off
+motion off
+2018-06-15 13:23:54.848 (9807.060s) [ivsMoveDetection]         ImpEncoder.cpp:570      0| Will execute command /system/sdcard/scripts/detectionOn.sh
+Running: /system/sdcard/config/userscripts/motiondetection/x.sh on
+motion on
+2018-06-15 13:23:54.890 (9807.101s) [ivsMoveDetection]         ImpEncoder.cpp:774      0| Detect !!
+2018-06-15 13:23:56.890 (9809.102s) [ivsMoveDetection]         ImpEncoder.cpp:570      0| Will execute command /system/sdcard/scripts/detectionOff.sh
+Running: /system/sdcard/config/userscripts/motiondetection/x.sh off
+motion off
+2018-06-15 13:23:58.928 (9811.139s) [ivsMoveDetection]         ImpEncoder.cpp:570      0| Will execute command /system/sdcard/scripts/detectionOn.sh
+Running: /system/sdcard/config/userscripts/motiondetection/x.sh on
+motion on
+
+i.e. I don't see any on of the output LOG_S(INFO) << ""Execute "" << command << "" returned:"" << retVal; should produce.
+It's probably down to that 'missing' commit yesterday, it might not have been in the source when you built the binary?",Lapse,L06,Forgetting to Save Work
+HE_020,Issue,https://github.com/hrydgard/ppsspp/issues/2843#issuecomment-34044805,"Oh, darn, I forgot.  Sorry.
+So, texture filtering is set to 0604.  We don't expect this value.
+Currently we support the lower value (4) being from 0 - 7.  This is the min value (used when sampling the texture to a smaller area.)
+The upper value (6), we treat odd values as linear filtering, and even values as nearest.  We ignore any value like 6.  However, if we did support 6, it would still be nearest, but it would filter between the nearest two mipmap levels I guess.
+Does this value vary when linear filtering is working / is not working?  Or is it always 0604 or etc. when things that ought to be filtered are drawn?
+Maybe the PSP treats any none zero value in the upper slot as linear.
+-[Unknown]",Lapse,L07,Forgetting Previous Development Discussion
+HE_021,Issue,https://github.com/react-boilerplate/react-boilerplate/issues/1210#issuecomment-259066184,"@wer32 I'm sorry about that. When I retested in the dev branch, I totally forgot about it ONLY being a production problem only. Then when I read Hi, this is what works for me: followed by essentially a repeat of what I said in my previous comment, I assumed it was all good. I will try and have another look later.",Lapse,L07,Forgetting Previous Development Discussion
+HE_022,Issue,https://github.com/asim/go-micro/issues/2041#issuecomment-708332549,"ah sorry, but for micro/micro usage i can't help",Mistake,M01,Code Logic Errors
+HE_023,Issue,https://github.com/aws/aws-cli/issues/454#issuecomment-27711690,"I’m running the latest release of was cli on Mac OSX 10.9 Server.  The file that fails is a 30 GB binary.  It is quite reproducible, either using cp or sync.
+The same machine/software installation is able to sync a 30 GB local folder filled with 600 MB binaries without difficulty — a single operation.  Whatever is happening, it does not appear related to the overall amount of data transferred.  It seems confined to the size of a single object.
+Sorry I can be more helpful.  Not presently using ec2.
+Jim
+On Nov 4, 2013, at 10:42 AM, James Saryerwinnie notifications@github.com wrote:
+
+Looking into this. Is this consistently happening with > 5GB files? Also where are you running the s3 command? If it's on an ec2 instance, could you share what instance type you're using?
+Trying to repro this and want to make sure I'm simulating as close as possible the same environment.
+—
+Reply to this email directly or view it on GitHub.",Mistake,M01,Code Logic Errors
+HE_024,Issue,https://github.com/ocornut/imgui/issues/1369#issuecomment-336938606,"Right. I used Push/Pop ID elsewhere but didn't think to look to how the ID thing works. I had the same conflict over buttons in the same scope with the same label. I also used it wrong. Thought it was about setting the id for the next control, not that it creates a scope whose name takes part in the hash of the scoped controls.
+Anyway thanks for the help and sorry for the unnecessary issue.",Mistake,M01,Code Logic Errors
+HE_025,Issue,https://github.com/SteveLTN/https-portal/issues/230#issuecomment-638928099,"I was setting upstream with the external ip, my mistake.",Mistake,M01,Code Logic Errors
+HE_026,Pull Request,https://github.com/statsmodels/statsmodels/pull/217#issuecomment-5019867,"silly mistake, I have prepend in the function name in my example, testing again",Mistake,M01,Code Logic Errors
+HE_027,Issue,https://github.com/pmndrs/valtio/issues/164#issuecomment-857171525,This was my fault actually. I was reading from the form proxy directly.,Mistake,M01,Code Logic Errors
+HE_028,Issue,https://github.com/square/okhttp/issues/5328#issuecomment-518287258,"@yschimke Ok, sorry, I thought you were referring to the connect timeout.
+If I am not mistaken, the call timeout is for the whole call, including reading and writing?
+I only want to abort if the connection cannot be made in 10 seconds. When a connection is possible, I want to be able to load the data in max 2 minutes or so.",Mistake,M01,Code Logic Errors
+HE_029,Pull Request,https://github.com/runelite/runelite/pull/7526#issuecomment-457051743,"Ah. Just saw your message about it miscalculating a known good. Sorry, this is a pain in the ass hopping back and fourth. Hope you have better luck implementing your fix than I did!",Mistake,M01,Code Logic Errors
+HE_030,Issue,https://github.com/neomutt/neomutt/issues/28#issuecomment-220342385,"re ifdef: I believe that if other distros take those patches, my personal opinion about them is moot :)
+re time: I'm part to blame there, but I was hoping conditional date could be turned into an expression like what smart time does",Mistake,M01,Code Logic Errors
+HE_031,Issue,https://github.com/go-gitea/gitea/issues/1074#issuecomment-282783228,"Got it fixed, it was actually my fault. My STATIC_ROOT_PATH was pointing to a wrong path.",Mistake,M01,Code Logic Errors
+HE_032,Issue,https://github.com/minio/minio/issues/6025#issuecomment-402308807,"Hi Reto,
+Sorry for the delay in response. Can you remove gzip from your caddy config file? Here is the corresponding commit in caddy server's code https://github.com/mholt/caddy/commit/e2544597a1f5fe0842012bbbde29213745844ea7
+Looks like in this case, it will always convert it to a weak etag. Please let us know how it goes.",Mistake,M01,Code Logic Errors
+HE_033,Issue,https://github.com/streamaserver/streama/issues/708#issuecomment-446456734,"I've digged into this a little bit, and it seems to be an error caused the following cascade of events:
+ViewingStatusController tries creating a new ViewingStatusService, which, in turn, tries creating a new ViewingStatus.
+Movie does not have a TvShow show property, like Episode does, so it fails in this line, trying to access the TvShow show property of a Movie.
+A solution (I think) would be handling the type of the video being saved (movie or episode) and, in the case of it being a Movie, do something (that I don't know) to create the ViewingStatus without accessing the TvShow show property.
+Sorry for the messy explanation, hope the links clarify it a little!",Mistake,M01,Code Logic Errors
+HE_034,Issue,https://github.com/aws-amplify/aws-sdk-ios/issues/1304#issuecomment-531388009,"Hi @JLau-cy apologies for the delayed response.
+You do not have to call AWSCognitoIdentityCustomChallengeDetails.task.continueOnSuccessWith. You just need to set the result on AWSCognitoIdentityCustomChallengeDetails object. SDK will take care of the rest. When the custom auth completes you will get a call back on didCompleteStepWithError. If error object is nil, that means the step succeeded.",Mistake,M01,Code Logic Errors
+HE_035,Issue,https://github.com/ampproject/amphtml/issues/33340#issuecomment-897072884,"I played around with this, and I think I've narrowed it down to just the \r char. When HTML is parsing, it normalizes \r and \r\n into a single \n char, which affects the hashing. If I do a replace(/\r/g, '') on the script before hashing and printing into the HTML, it works correctly. Sorry for the confusion!
+https://glitch.com/edit/#!/sprinkle-intermediate-pawpaw?path=server.js%3A13%3A38",Mistake,M01,Code Logic Errors
+HE_036,Issue,https://github.com/Leaflet/Leaflet/issues/1705#issuecomment-32046629,"@danzel oops, I broke multiple zooms when tiles didn't load, hold on...",Mistake,M01,Code Logic Errors
+HE_037,Issue,https://github.com/dzenbot/DZNEmptyDataSet/issues/60#issuecomment-71010578,"My mistake, I should call tableView.beginUpdates() and tableView.endUpdates()",Mistake,M01,Code Logic Errors
+HE_038,Issue,https://github.com/phalcon/cphalcon/issues/42#issuecomment-8050464,"I am sorry, i use Users::findFirst(),but the result is also wrong.",Mistake,M01,Code Logic Errors
+HE_039,Pull Request,https://github.com/composer/installers/pull/27#issuecomment-7707062,"@shama Sorry to bother you again; when using aura/composer as part of composer.json, I get this when issuing ./composer.phar install:
+Argument 1 passed to Composer\Installers\BaseInstaller::__construct() must implement interface Composer\Package\PackageInterface, instance of Composer\IO\ConsoleIO given, called in phar:///Users/pmjones/Code/auraphp/system/composer.phar/src/Composer/Installer/InstallerInstaller.php on line 98
+As far as I can tell the Aura\Composer\Installer code is very very close to what we had before.  Any thoughts?",Mistake,M01,Code Logic Errors
+HE_040,Issue,https://github.com/ruby-grape/grape/issues/1537#issuecomment-267961187,Sorry about that. Can you please dig up where we're getting the definition of .zero? from? Would like a PR that fixes that of course.,Mistake,M01,Code Logic Errors
+HE_041,Issue,https://github.com/remix-run/react-router/issues/5549#issuecomment-331393907,"Sorry, it is my fault ,  I have some code  in componentWillReceiveProps which affect re-render.",Mistake,M01,Code Logic Errors
+HE_042,Pull Request,https://github.com/emscripten-core/emscripten/pull/13725#issuecomment-803702022,"I agree that DISABLE_EXCEPTION_CATCHING doesn't really need 2 and can infer it from EXCEPTION_CATCHING_ALLOWED. But I'm not sure if we can remove it without breaking  up existing Makefiles and such. We can break backward compatibility if it's really necessary, but I'm not sure if this is an important enough reason to do it.
+Having said that, I also agree this PR may not have enough traction. The first version of the PR also contained lines like
+set_settings('INLINING_LIMIT') ;; this means 1
+
+INLINING_LIMIT can take any numeric value, so only omitting 1 looked weird. But I later realized those lines were caused by my mistakes 4 years ago and they really meant set_settings('INLINING_LIMIT', 50) (See #13726 (comment) and #13726 (comment)) and removed them from this PR, which only leaves DISABLE_EXCEPTION_CATCHING. Anyway closing this then.",Mistake,M01,Code Logic Errors
+HE_043,Issue,https://github.com/opentx/opentx/issues/5317#issuecomment-341028804,"Sorry, but this is not possible. Global fonctions cannot refer to  things that might not exist in some models",Mistake,M03,Wrong Assumption Errors
+HE_044,Issue,https://github.com/jekyll/jekyll/issues/380#issuecomment-15476524,@mattr- I am new to ruby. If I patch jekyll.rb and the changes with a diff from either repo above will it break my install of Jekyll 1.0.0.beta2 ? I apologize if this is a dumb question. Thank you for response 👍,Mistake,M03,Wrong Assumption Errors
+HE_045,Pull Request,https://github.com/simple-icons/simple-icons/pull/3375#issuecomment-738976421,"I think they ""kind of"" want this effect, no?
+
+Yes, you're right, sorry I've only see the Github icon. So seems that this icon could be added as is.
+What do you think about @service-paradis has pointed @runxel?",Mistake,M03,Wrong Assumption Errors
+HE_046,Issue,https://github.com/Guake/guake/issues/1646#issuecomment-537552974,"Well, fair point. I'd reported issues just like this myself.
+The bitter truth is: you have to rely on your system package manager, and just keep /usr/local empty. The best make uninstall is rm -rf /usr/local/*. The more permanent stuff you keep alive under /usr/local, the more PITA you'll have with it in the long run. (However, /usr/local shines in playground-style experiments.)
+Worse; you can't trust package authors to do uninstall properly. That is another reason why package managers exist; so that we have this epic bug occur exactly once, and learn from the lesson. In that bug, an author rolled his own uninstall script, and made a fatal typo rm -rf /usr /lib/nvidia-current/xorg/xorg -- spot the extra space.
+Sure, we'll fix this in Guake. But many more other projects won't. Many projects don't even offer make uninstall -- correctly delegating that function to package managers. I'm sorry that you had to have the adventure to figure this out, but the advice is: just don't make the habit to rely on it.",Mistake,M03,Wrong Assumption Errors
+HE_047,Issue,https://github.com/Entware/Entware/issues/605#issuecomment-806488663,This package came from OpenWrt with no any changes and we'll keep it as close to upstream as possible to simplify future updates. Sorry.,Mistake,M03,Wrong Assumption Errors
+HE_048,Issue,https://github.com/sqlmapproject/sqlmap/issues/14#issuecomment-55926334,"@t1gor short answer: no. It's kind of complicated to convert current free-text format to anything ""formatted"". Sorry, but can't promise anything",Mistake,M03,Wrong Assumption Errors
+HE_049,Issue,https://github.com/beego/beego/issues/1252#issuecomment-121799067,"I'm sorry, I think I'm misunderstood. What I wanted is to select all users along with their roles. Is this possible or not yet implemented?",Mistake,M03,Wrong Assumption Errors
+HE_050,Issue,https://github.com/swaywm/sway/issues/3932#issuecomment-611719950,"Eh, no, sorry - accept is indeed used for feedback, but that's legacy so not mentioned in my article.",Mistake,M03,Wrong Assumption Errors
+HE_051,Issue,https://github.com/NLPchina/elasticsearch-sql/issues/334#issuecomment-263659120,"well sorry @elyday but I think you are wrong
+the result is just fine.
+grouping means like nested ""for each""
+for each column1 value1
+for each column2 value2
+for each column3 value3
+for each column4 value4
+save sum of all column5 values where column1 = value1 and column2 = value2 and column3=value3 and column4 = value4
+for result like yours you probably want to group by only three fields. meaning:
+GROUP BY column, column2, column4
+read about group by here for example
+http://www.w3schools.com/sql/sql_groupby.asp",Mistake,M03,Wrong Assumption Errors
+HE_052,Issue,https://github.com/puppeteer/puppeteer/issues/5315#issuecomment-575794730,"Sorry for the late response, but my problem is that the proxy isn't authenticating at all. For example, on Windows, using authenticate() with the username and password arguments works as expected. The same project on macOS won't authenticate while given the correct user/pass.
+I'm wondering if this could be a problem on my end, maybe some sort of port issue or proxy setting.",Mistake,M03,Wrong Assumption Errors
+HE_053,Issue,https://github.com/dotnet/runtime/issues/8582#issuecomment-316459991,"Sorry, I should clarify that this is caused by an unfortunate decision to exclude the ARM SDK components by default when VS installs the SDK.  This is supposed to be corrected at some point, but I'm not sure when.
+The more serious issue (the one I was referring to above) is that you can't just use Add/Remove Programs to ""Change"" the SDK and add the missing ARM files.  You have to actually uninstall/reinstall.",Mistake,M03,Wrong Assumption Errors
+HE_054,Issue,https://github.com/Homebrew/brew/issues/10674#issuecomment-784006680,This is intentional behaviour because we want to have brew edit edit a named file in the current working directory if it's present. We have users that rely on this workflow. Sorry!,Mistake,M03,Wrong Assumption Errors
+HE_055,Issue,https://github.com/golang/go/issues/37144#issuecomment-586657626,"I will elaborate on the reason I opened that issue. I've used go doc time and picked time.Tick() for a client connection handler that should free the timer after the client has been disconnected and I assumed that it will free it automatically. It was a rookie mistake and from now on I use go doc -all <pkg> | less, instead. If the function name was TickForever(), I might have given it more thought.
+I was convinced that I am not the only one who made that mistake or just read convenience wrapper and did not read further. So I have searched GitHub and googled for code that uses time.Tick() and sure enough I found some cases.
+Here is a list of examples, which I believe are problematic, since there is an option to stop or break the loop, yet the ticker cannot be freed:
+
+https://github.com/golang/sys/blob/master/windows/svc/example/service.go#L23
+https://github.com/Netflix/hal-9001/blob/master/hal/periodic.go#L134
+https://github.com/pydio/cells/blob/master/common/service/utils.go#L28
+https://github.com/izikaj/iziproxy/blob/master/server/tcp_handle_signals.go#L49
+https://github.com/gocraft/health/blob/master/aggregator.go#L22
+https://github.com/GoogleCloudPlatform/compute-image-tools/blob/master/daisy/step_create_instances.go#L54
+https://github.com/rs/xstats/blob/master/statsd/statsd.go#L79
+https://github.com/flynn/flynn/blob/master/controller/scheduler/discoverd.go#L32
+
+Cases that are not problematic, since the executable will exit and the runtime will stop the timer eventually, but are still misused and leak resources:
+
+https://github.com/cockroachdb/cockroach/blob/master/pkg/storage/client_raft_test.go#L1390 (do their leaktest even work?)
+https://github.com/solo-io/go-utils/blob/master/testutils/helper/curl.go#L61
+https://github.com/odeke-em/youtube-popular-bot/blob/master/cmd/youtube-popular-bot/main.go#L110
+https://github.com/influxdata/influx-stress/blob/master/cmd/insert.go#L119
+
+I've found those examples using Google search string: intext:""time.Tick("" ext:go site:github.com",Mistake,M03,Wrong Assumption Errors
+HE_056,Pull Request,https://github.com/mapstruct/mapstruct/pull/1870#issuecomment-522323436,"@filiphr  I'm sorry. I didn't know it. Changes CompilationOutcomeDescriptor and DiagnosticDescriptor were reverted,",Mistake,M03,Wrong Assumption Errors
+HE_057,Pull Request,https://github.com/apache/hadoop/pull/2377#issuecomment-753872315,"Thanx @huangtianhua for the work here, Sorry I couldn't revert back to your emails & pings.
+@brahmareddybattula has objections on the jira with the approach itself. Quoting him from the jira
+
+I dn't think bumping the namelayout is best solution, need to check other way. ( may be like checking the client version during the upgrade.)
+
+There is no code change post HDFS-15660? It was asserted the generic solution shall solve this problem or will change something
+So, We might need changes here post HDFS-15660. should wait for him, unless he is convinced.",Mistake,M04,Internal Communication Errors
+HE_058,Issue,https://github.com/telly/TLYShyNavBar/issues/99#issuecomment-166219570,"@Mazyod sorry I must be missing something. What is this  TLYShyScrollViewController.m you're referencing? In Swift, I'm just using the .framework.",Mistake,M04,Internal Communication Errors
+HE_059,Pull Request,https://github.com/oppia/oppia/pull/2951#issuecomment-274386742,"@jacobdavis11 @seanlip Thank you for the review.
+
+Now after hitting the add item the cursor focuses on the new input field.
+Pressing enter creates a new input field and that field is focused. If there are any empty fields then they are automatically removed as discussed earlier.
+
+@seanlip I forgot to mention the changes sorry for that.",Mistake,M04,Internal Communication Errors
+HE_060,Issue,https://github.com/segmentio/nightmare/issues/1301#issuecomment-366165895,"Haha, it's mocha. Sorry I should have been more clear :-)
+The race I'm talking about is between the screenshot action and cleaning up. Something like:
+nightmare.on('end', function() {
+  const buf = nightmare.screenshot()
+  await fs.writeFile(""screen.png"", buf)
+})
+
+await nightmare.end()
+Without coordination, nightmare.end() may kill the process before the screenshot has finished writing.
+Given that you're using tape, I'd probably create a small helper function. I'm not too familiar with tape, so this might be a bit off but something like this:
+const Nightmare = require('nightmare')
+const assert = require('assert')
+
+// your tests
+function TestGoto(tape) {
+  test(tape, async nightmare => {
+    await nightmare.goto('https://google.com')
+    assert.equal('Google', await nightmare.title())
+  })
+}
+
+// test helper
+async function test(tape, fn) {
+  const nightmare = Nightmare({ show: false })
+  let err
+
+  // don't let failed assertion kill the node process
+  try {
+    await fn(nightmare)
+  } catch (e) {
+    err = e
+  }
+
+  // take a screenshot either way
+  const buf = await nightmare.screenshot()
+  await fs.writeFile('screenshot.png', buf)
+  await nightmare.end()
+
+  // finally fail or pass
+  err ? tape.fail(err) : tape.pass()
+}", ,M04,Internal Communication Errors
+HE_061,Issue,https://github.com/AugustRush/Stellar/issues/18#issuecomment-300753974,"Sorry my previous comment was not clear: there still is one problem on current version of Stellar. Deployment Target must be set to 8.0 in order to make Stellar installation via Carthage work for iOS 8.
+I had to changed it myself to make the installation work!",Mistake,M04,Internal Communication Errors
+HE_062,Pull Request,https://github.com/Hammerspoon/hammerspoon/pull/2493#issuecomment-698746392,"Sorry - when I said ""combining this branch"", I just meant for the purposes of testing - I wasn't planning on doing a permanent merge. I think it's best to keep these pull requests seperate. In theory though, I can use the work you've done here, to observe the simulated gestures - which might give me a better understanding as to what they're actually doing.",Mistake,M04,Internal Communication Errors
+HE_063,Issue,https://github.com/xianyi/OpenBLAS/issues/746#issuecomment-173182822,"Possibly related to #695
+Hmm. Apparently not, at least copying that memset into gemv.c and zgemv.c did not change the outcome of the testcase from 695 (while substituting the C implementation of cgemv_t did). Sorry for the noise here.",Mistake,M04,Internal Communication Errors
+HE_064,Pull Request,https://github.com/doctrine/orm/pull/1114#issuecomment-52649071,"@guilhermeblanco I'm sorry, but I have created this PR only to clarify http://www.doctrine-project.org/jira/browse/DDC-3259",Mistake,M04,Internal Communication Errors
+HE_065,Issue,https://github.com/psf/requests/issues/4270#issuecomment-325743035,"Sorry, please also set verify=False",Mistake,M04,Internal Communication Errors
+HE_066,Pull Request,https://github.com/facebook/react-native/pull/7283#issuecomment-215899769,"Sorry, I should have been clear.
+It depends on a version of React that hasn’t been released yet.
+I won’t be available the next two weeks so I’m leaving this for the team to merge during the next RN sync.",Mistake,M04,Internal Communication Errors
+HE_067,Pull Request,https://github.com/saltstack/salt/pull/55446#issuecomment-559266110,@vulnbe We are no longer accepting PRs to the develop branch. This needs to be re-opened against the master branch. Sorry for the confusion.,Mistake,M05,External Communication Errors
+HE_068,Issue,https://github.com/symfony/symfony/issues/27463#issuecomment-393991520,"I am sorry, but I have to close your issue as we use GitHub issues only to discuss new features and for bug reports. For support, please refer to one of the support channels. Thank you for understanding.",Mistake,M05,External Communication Errors
+HE_069,Issue,https://github.com/MagicStack/asyncpg/issues/283#issuecomment-450580097,"@elprans 	sorry, but what do you mean by ""wrapper"" in connection wrapper? Thanks.",Mistake,M05,External Communication Errors
+HE_070,Issue,https://github.com/ycm-core/YouCompleteMe/issues/492#issuecomment-22222954,"Hey, sorry for the misunderstanding. Vheon's got the right idea. Having the source complete VimL as well as variables defined by your plugins ie g:ycm_autoclose_preview_window_after_completion.
+Thanks!",Mistake,M05,External Communication Errors
+HE_071,Issue,https://github.com/joomla/joomla-cms/issues/17486#issuecomment-323048776,"Does the change of status to ""Information Required"" mean that the information I provided is insufficient?
+If so, what else do you need? Or does it mean something else? (sorry, it's my first use of the issue tracker)This comment was created with the J!Tracker Application at issues.joomla.org/tracker/joomla-cms/17486.",Mistake,M05,External Communication Errors
+HE_072,Issue,https://github.com/hashicorp/terraform/issues/9289#issuecomment-270367099,"Hi all
+this is correct - in order to attempt to normalize the Alias records, we were dropping the dualstack from the start of it. A dualstack record has a different hosted zone id. I am on the path to rectifying this right now
+Thanks for the understanding and apologies for the time taken here - I just opened a PR for a datasource that will do what @nckslvrmn is doing above
+Almost ready here",Mistake,M05,External Communication Errors
+HE_073,Issue,https://github.com/bumptech/glide/issues/757#issuecomment-158059016,"Thanks for you answer . I am sorry because of  my English is poor.
+I mean the ImageView always display the placeholder until i manually scroll or refresh the  RecyclerView again. I seems it cannot load the real image when its done . It spent enough time to observer this phenomenon.
+Maybe the follows  image can tell me what i said:
+
+
+The i mageView always show the placeholder at first time
+
+
+
+2 .After 10 minutes, i refresh the RecyclerView again, it can display the real image well",Mistake,M05,External Communication Errors
+HE_074,Issue,https://github.com/microsoft/vscode/issues/39594#issuecomment-349695403,"Perhaps, instead of just deleting the comment without comment, you could have asked me for further information,
+
+Yes, you are right. Deleting the comment wasn't the nice thing to do and I am sorry for that. To explain my self (not to justify): When you get lots of issues every day you'll develop an allergy towards missing information.
+Again, please file a new issue. It doesn't cost much. When an error occurs try to remember what you just did and then try to reproduce. That's the most valuable thing to do. Thanks",Mistake,M05,External Communication Errors
+HE_075,Pull Request,https://github.com/dvf/blockchain/pull/34#issuecomment-342929116,@floscha Sorry but I don't see any tests here. Did you forget to commit them?,Mistake,M05,External Communication Errors
+HE_076,Issue,https://github.com/phpspec/phpspec/issues/179#issuecomment-31460346,"Hey guys,
+sorry to bumb this, but am I really the only one running into problems with this?",Mistake,M05,External Communication Errors
+HE_077,Pull Request,https://github.com/nestjs/nest/pull/1060#issuecomment-424066469,"Ohh, I thought you were talking about directories tree. Sorry for the confusion, this is the outcome of reading email's notifications 😅",Mistake,M05,External Communication Errors
+HE_078,Issue,https://github.com/spring-projects/spring-boot/issues/107#issuecomment-27767596,"@dsyer sorry, misunderstood the question. Didn't know about the jdbc-starter, thanks!",Mistake,M05,External Communication Errors
+HE_079,Issue,https://github.com/desktop/desktop/issues/9647#issuecomment-621669942,"Sorry about that 😞  as a last resort I would try the solution by @dima-y: #9597 (comment), since it looks like they have the same issue as yours.
+If this still does not work, you can subscribe to #9597, since we're going to give progress updates about there and close the issue once the problem is resolved.
+Note that a patch for this problem has already been sent to the git repository, but since this issue does not affect v2.26.x it may take a few more days until the patch gets accepted and a new version of git v2.23.x gets released.",Mistake,M05,External Communication Errors
+HE_080,Issue,https://github.com/google/guava/issues/3187#issuecomment-400709606,"I'm to blame for starting that part of the discussion :) I probably overstated things. I know I have seen problems in the past when people (including me) tried a ""typedef"" like this, but it's been a while, and I don't remember the details well. So while I still wouldn't recommend the pattern in general, it might well work OK in your case.
+(I managed to dig up The pseudo-typedef antipattern about the general pattern.)",Mistake,M05,External Communication Errors
+HE_081,Issue,https://github.com/markdown-it/markdown-it/issues/130#issuecomment-241194517,"sorry, how does this fix work? The link seems to be a bit off.",Mistake,M05,External Communication Errors
+HE_082,Issue,https://github.com/flutter/flutter/issues/79987#issuecomment-815693154,"Sorry I meant the complete output of flutter run --verbose. Please include your Podfile as well.
+Thanks",Mistake,M05,External Communication Errors
+HE_083,Commit,https://github.com/chrisbanes/insetter/commit/65a159d4598a0ab1889e79eb9055f8ad9b7a2096#commitcomment-45528910,"Sorry perhaps I was not clear. The README is reflective of only of the state of the master branch, but there has not been a release of the code since June. Today when you look at the readme it says the ktx library is no longer needed, but then you actually add the latest version of the library to your project (0.3.1) you will find that you do still need the ktx library to get the extensions which causes a little bit of confusion. (EDIT: it looks like the new website clarifies this)",Mistake,M05,External Communication Errors
+HE_084,Issue,https://github.com/microsoft/TypeScript/issues/10866#issuecomment-463445862,"I understand your frustration, but lots of people feeling a behaviour is correct, doesn't mean it is the right thing to do.
+TypeScript rewriting module identifiers is a slippery slippery slope.  What has been expressed multiple times in this thread is that TypeScript is configurable to model the behaviour of other module resolvers and other build tools, not replace or implement them.
+Just because TypeScript can be configured to resolve modules in flexible ways doesn't not mean that TypeScript emits ""broken code"".  Certain loaders and bundlers that mirror this configuration would work just fine.
+If we were to be critical of anything, we could blame the team for naming the option something that might look like it fixes a problem it was never intended to fix, though the documentation for the option makes it clear that it does not change the emit.
+Because a particular tool doesn't solve a problem you have doesn't always mean it is that tools fault.  It maybe you are just don't have all the tools you need to solve your problem.",Mistake,M06,Solution Choice Errors
+HE_085,Pull Request,https://github.com/kristijanhusak/laravel-form-builder/pull/220#issuecomment-193008085,"Hi,
+Thanks for the PR, and sorry for delay. I like the idea, but implementation could be better. This works only for wrapper, and i think we should avoid custom array merge recursive functions and try to use default ones with different implementation. Try to refactor it, and think about adding these defaults to other things, not just wrapper.",Mistake,M06,Solution Choice Errors
+HE_086,Pull Request,https://github.com/apache/flink/pull/15939#issuecomment-878891426,"@lirui-apache @wangwei1025 Do we need update document and update Hive reader?
+
+Yes, we can have a separate PR for that. @wangwei1025 do you want to work on it?
+
+@lirui-apache @JingsongLi
+Sorry to replay so late, I can work on it. Does this has related issus on jira ?",Mistake,M07,Time Management Errors
+HE_087,Pull Request,https://github.com/addyosmani/essential-js-design-patterns/pull/179#issuecomment-254092004,Requires a rebase (sorry for the delay!),Mistake,M07,Time Management Errors
+HE_088,Issue,https://github.com/eclipse/che/issues/10473#issuecomment-412909209,@stoddarn sorry for the late response -- we went back and forth with our IT group for about a week and they finally found a solution which would create the folder. Unfortunately they did not share the details of the solution with me; ultimately it was not something I was able to solve on my own.,Mistake,M07,Time Management Errors
+HE_089,Issue,https://github.com/fog/fog/issues/3430#issuecomment-87541950,"@philayres Could you try my branch and see if it fix the issue?
+gem 'fog', github: 'fog', branch: 'fix-loading-time'
+EDIT: Sorry about the delay but i had to do patches on all providers so it took some time. =)",Mistake,M07,Time Management Errors
+HE_090,Pull Request,https://github.com/telegramdesktop/tdesktop/pull/8489#issuecomment-883638165,"Sorry, due to some life problem, I don't have time to finish this work :(",Mistake,M07,Time Management Errors
+HE_091,Pull Request,https://github.com/supermarin/ObjectiveSugar/pull/84#issuecomment-72142203,"@kostiakoval thank you for the contribution, and sorry for the super duper late review.
+Do you mind adding tests for all the classes you contributed, and fixing the spacing (it's 2 spaces in tests)?",Mistake,M07,Time Management Errors
+HE_092,Pull Request,https://github.com/pypa/pipenv/pull/1259#issuecomment-356198263,"Sorry to leave this hanging for so long! I know most of us have been busy due to holidays and catch up. I will give this a review but I’m excited about the refactor and the prospect of cleaning more things up generally. Thanks for putting this all together, I know it was a substantial effort!",Mistake,M07,Time Management Errors
+HE_093,Issue,https://github.com/dotnet/efcore/issues/19172#issuecomment-572071404,"Sorry for the late reply - shortly after my report I went on an extended holiday.
+I attempted to create a repro project, but the repro project works fine. Even though I have a standalone DBL project, it is still rather massive. So instead of attempting to strip that down, any ideas what could trigger such a thing so I have something to go on to try and attempt to build a repro project that actually reproduces the issue?",Mistake,M07,Time Management Errors
+HE_094,Issue,https://github.com/keras-team/keras/issues/1558#issuecomment-234708722,"Ok, Thank you! sorry I did not answer to your previous message, I was away for some days. I will check and let you know about how it works.
+Thank you",Mistake,M07,Time Management Errors
+HE_095,Issue,https://github.com/openemr/openemr/issues/458#issuecomment-276823822,"Hey @bradymiller
+Apologize for the delay responding. Drugbank DOES indeed have a lic model for commercial usage. https://www.drugbankplus.com has the lic details and contact info. I have no idea what the cost would be... (Disclaimer: I have nothing to do with them, nor am I a lawyer). What I do really like is the data :) which in healthcare IT is somewhat spendy (as you may well know)!
+One downside - the data is provided in an enormous XML file, 580+MB. Each drug's data is heavily nested... Let's just say that multi-threading the load isn't planned.
+Another idea I had while reviewing the data was to provide the Provider (odd phrase, please forgive me) the ability to print out a PT usage sheet since that is also doable.
+Modeling -
+I love the UML, but nothing close to the extreme. One thing I really value is the code generation part :)
+
+@MatthewVita
+
+Is there a webpage on this? Can't find anything on it. Seems interesting!
+
+I could have better stated the concept. The more proper term is factory pattern and in my world the concrete implementation is the entity, but this isn't canonical in the development world. It was proposed by the GoF way back in the day in the hallowed tome of 'Design Patterns' for some light reading. I usually follow the abstract factory pattern (https://en.wikipedia.org/wiki/Abstract_factory_pattern) for something like this. The basic idea is to provide the ability to (in the abstract) support multiple datasets through a single common interface. So - drugbank initially since it's free, and whatever next. From the end user perspective to get the entity ou just say something like
+Drug drug = new DrugFactory(""drugbank""); // or whatever ArrayList<String> searchResults = drug.searchByName('Haldol'); //flexible and fun! 
+And the factory supplies you the concrete class. With drug, I can use the same methods as with any other concrete drug class - and expect the same results. The key being here is that Drug is an interface which forms the contract - it outlines the public methods the concrete class supply as well as the return. The concrete class implements the interface and no troubles no bubbles. I'll stop here....
+
+OpenEMR uses MySQL and I would bet most users won't be on 5.7 with the native JSON support.
+
+Excellent point. It would make the UI a little more fun. I was thinking we could chuck back JSON to the UI and then use data binding, yet after thinking more about that it opens a can of worms.
+
+There are a few ways. I would recommend putting together a PR and using markdown comments. If you need to visualize things, maybe try out the FOSS http://pencil.evolus.vn/
+
+I'll check out Pencil.... I'm very visual, and also lazy I hope it can generate code ;)
+Lastly,
+-- Progress, I've been getting up to speed on doctrine. I like it alot! This however introduces a problem with the massive data load, this load isn't viable in browser and will need to be CLI. I couldn't get this functional with the existing framework and rigged up the loader. I'm not sure if this creates a technical debt.
+--- I have something approaching a working MVP now regarding initial drug load into a set of tables I'm calling 'KB_Drug_(DOMAIN)'
+--- Not that this has to be addressed now, but does anyone have any thoughts on isolating the KB tables into a separate database, schema, or just throw it all together?
+-- I'll post my crummy schema and with luck some use cases/domain concepts for comment later today/tonight.",Mistake,M07,Time Management Errors
+HE_096,Pull Request,https://github.com/nvm-sh/nvm/pull/722#issuecomment-92095755,"Sorry for the delay - this looks great, thanks!",Mistake,M07,Time Management Errors
+HE_097,Issue,https://github.com/SortableJS/Sortable/issues/1624#issuecomment-581096155,"@bnadji @davidjmz @userabuser Ok, I published it on NPM: https://www.npmjs.com/package/animatum
+Sorry about the delay.
+If you find any issues, please open them on the github: https://github.com/owen-m1/Animatum",Mistake,M07,Time Management Errors
+HE_098,Issue,https://github.com/impress/impress.js/issues/322#issuecomment-24578062,"sorry for such a late anwser. I see that you examples are not on line anymore.
+In theory setting <div id=""impress"" data-min-scale=""1"" data-max-scale=""1""> should disable scaling impress.js when window size is changed. Setting data-width and data-height will not be needed in such case as these are only used as reference values to count the scaling.
+So it is also up to you to make your slides in proper size.
+It's hard to help without the example, so if you are still having this issue, please put example on line and I'll have a look.",Mistake,M07,Time Management Errors
+HE_099,Issue,https://github.com/algorithm-archivists/algorithm-archive/issues/185#issuecomment-401572501,"@seriousme Sorry I am late to the thread (and it's already been closed). If anything, the Algorithm Archive is closer to Numerical Recipes than Rosetta Code. I am fully aware both of these projects exist and are similar in scope to the Algorithm Archive; however, we are providing something new here that no other project provides (so far as I'm aware).
+Differences from Rosetta Code:
+
+This is fundamentally a book on algorithms, focusing on understanding the underlying algorithms. The goal here is to provide a reading experience that allows users to fully implement and understand every algorithm from the ground-up in the language of their choice. It is definitely not a collection of tasks for the community to complete.
+The implementations provided here are also meant for understanding and we will always try to only merge code that can be understood completely. Sure, we are lacking the power to review certain languages, but I have no doubt people will come in to do just that.
+We have the goal of providing a full curriculum for different areas of computer science, mathematics, physics, etc. This would mean that anyone wanting to learn the ropes in computational physics (for example) can read our volume on computational physics, and they should be able to fully understand that area of research.
+
+Differences from Numerical Recipes:
+
+First and foremost, our licensing for the code snippets is actually somewhat sane.
+This text (in principle) has both a broader scope and expects less background knowledge from the reader. Obviously, we are not there yet on either of those goals, but I are doing what I can to get there.
+This text is also (in principle) more of a modern take on the algorithms. Though NR has obviously been updated since 1986, it is showing it's age.
+
+To be clear: I am not against either project. They are both wonderful resources. This book is targeted at a fundamentally different audience than NR (We want people who would watch a youtube video and think, ""Oh man. I want to do that!"" -- basically hobby programmers), but also attempts to provide clear descriptions of the algorithms so people don't need to collate papers and resources from other places.
+The tagline, ""A book on every algorithm in existence in every language possible"" is not incorrect. I am sure with time it will become more obvious what the differences are because we are only just now getting started.
+Let me know if you have any further questions here. I know that the scope seems similar in nature, but I can assure you we looked at Rosetta Code before starting this project.",Mistake,M07,Time Management Errors
+HE_100,Pull Request,https://github.com/rubygems/rubygems.org/pull/1669#issuecomment-639294625,Sorry about the delay in resolving this. We have updated the ruby/rubygems req to use format bundler expects. this is not needed anymore.,Mistake,M07,Time Management Errors
+HE_101,Issue,https://github.com/lerna/lerna/issues/1433#issuecomment-490172416,@erquhart Sorry for the super late reply (so much work to do!)... this looks amazing so far! 🎉 ❤️  Thank you for your hard work!,Mistake,M07,Time Management Errors
+HE_102,Issue,https://github.com/OmniSharp/omnisharp-roslyn/issues/1094#issuecomment-359864693,@rchande: Sorry for the delay here. We'd probably need to test for the appropriate package(s) here: https://github.com/OmniSharp/omnisharp-roslyn/blob/master/src/OmniSharp.Host/MSBuild/Discovery/Providers/VisualStudioInstanceProvider.cs#L56-L70.,Mistake,M07,Time Management Errors
+HE_103,Issue,https://github.com/Automattic/mongoose/issues/5127#issuecomment-291726732,@zhaozhiming sorry for the late reply. You can include a virtual populate as a populate option in your query. Just treat it like a normal populate when you specify the fields to populate,Mistake,M07,Time Management Errors
+HE_104,Pull Request,https://github.com/matrix-org/dendrite/pull/116#issuecomment-303323774,"LGTM, sorry!",Mistake,M07,Time Management Errors
+HE_105,Issue,https://github.com/flutter/flutter/issues/39553#issuecomment-530216239,"Hey @HansMuller sorry I've been busy and couldn't get back to you on this. The new stable release 1.9.1 has the issue now too, while the previous stable release was working perfectly. Let me create a small app and get back to you on this.",Mistake,M07,Time Management Errors
+HE_106,Issue,https://github.com/microsoft/vscode/issues/8688#issuecomment-231487752,"Hi Matthew,
+Thanks for reaching out – sorry this took a few days to bubble up to the top after the long weekend.
+We use the data that VS Code gathers to provide and improve the product.  For example, in the past, we’ve used the data we collected to isolate several hard to track down sources of crashes and performance regressions.   VS Code may use the hashed MAC address to identify a machine over time.  For example, we may use the hashed MAC address to identify a particular machine experiencing an unusually high number of crashes (which would skew our crash result information).  You are right that we could correlate a machine across data streams, but that’s not how we use it -- we use the unique system information to connect things like crash reports with feature use.
+When we first launched VS Code we didn’t allow people to opt out of this collection of data because it was a pre-release product and we were trying to understand if the product was actually useful and had the right mix of features.  As a fully released and supported product from Microsoft, we now let users opt out of providing data -- if users don’t want to provide us with data, then they can opt out but we really appreciate it when we do receive the telemetry as it helps improve the product for all.  That’s said, we want to ensure users have adequate control.
+I’d be happy to chat with you on this issue and the points you raise.  I think the easiest way to do that is to connect on email/skype/hangout … I’m smcbreen@microsoft.com.
+Sean",Mistake,M07,Time Management Errors
+HE_107,Commit,https://github.com/wallabag/wallabag/commit/522e37ad274361dde697da13a92ff3f846599822#r33384979,"Why not hash the urls, and use findByHashedUrlAndUserId? This would allow to benefit from the new indices on the hashed_url column.
+(Sorry, I know I'm late to the party, but I'm just trying this out now.)",Mistake,M07,Time Management Errors
+HE_108,Issue,https://github.com/TryGhost/Ghost/issues/2640#issuecomment-69717832,@ErisDS Sorry for not updating this. I will have a look at this at the weekend. Pretty busy right now.,Mistake,M07,Time Management Errors
+HE_109,Issue,https://github.com/h2o/h2o/issues/1089#issuecomment-260373318,Sorry for taking time. The issue has been fixed with the merger of the PR above. Please let us know if the issue persists.,Mistake,M07,Time Management Errors
+HE_110,Issue,https://github.com/orientechnologies/orientdb/issues/1943#issuecomment-35475391,"Yeah sorry, I am going to fix it in few days.",Mistake,M07,Time Management Errors
+HE_111,Pull Request,https://github.com/ocornut/imgui/pull/1713#issuecomment-418693076,"@eliasdaler I have two things in mind:
+1- I strongly want to discourage building/packaging imgui WITHOUT making custom modifications made to imconfig.h.
+2- I would prefer not signaling presence of build cruft in the root folder, to strongly signify that it is optional.
+As such, as Konstantin pointed out, it's perfectly ok if the CMakefile provide that functionality as long as it has a solution to handle (1) and this is well documented.
+
+message an error if ImGui is build as a top-level project!
+
+I'm not sure I understand this fully but it seems wrong. We don't want to strongly enforce hard constraints. I have strong design view on (1) and somehow (2) and that's one thing but flexibility is more important.
+(I have to apologies again if it seems that this PR feels neglected, I do have a large amount of stuff on my plate and current priority is to advance viewport/docking. I'm happy the PR is here and stable. If anything, I would much rather focus on getting satisfying VS-like .sln output from the CMakefile than anything else.).",Mistake,M07,Time Management Errors
+HE_112,Issue,https://github.com/balderdashy/sails/issues/3821#issuecomment-251775680,"@shanemileham Apologies for the slow reply.  (@particlebanana and I have been mainly focused on the adapters/drivers on the Waterline front as we get ready for Sails v1.0)  Looks like we just need to npm publish, but I want to run through the commits and make sure everything is solid first.  We'll look at that this afternoon.",Mistake,M07,Time Management Errors
+HE_113,Pull Request,https://github.com/cockpit-project/cockpit/pull/14581#issuecomment-694343571,"The flow should be something like this (text is imprecise and this is a very low-fi rough wireframe design-wise):
+
+Some of this, such as the reboot button being a split dropdown like the system overview, could be deferred to another PR. But this PR should have much of the general flow in the wireframe.
+Important parts:
+
+Let people know what's up as soon as possible. They should expect that their system may need to be rebooted and that services might need to be restarted. We should have a quick and dirty check that gets this mostly correct, but might be wrong. Hence may. Having it all the time  (whenever updates are available) would be bad, however, as people will just ignore it. So it should be based on some sort of heuristics.
+Show the updates as they happen. (We have this already, even in master.)
+Provide feedback when the system is doing something, such as checking to see if services need restarting and/or the system needs rebooting. We currently do not do this in the PR. It's absolutely mandatory to have this step.
+Have three states at the end:
+
+Updated (and doesn't need intervention). In-page design, like in Cockpit currently.
+Services need restarting. A dialog with a simple list of services that need to be restarted, with all checked by default.
+System needs a reboot — with a button to reboot the machine. In-page design, like in Cockpit currently.
+
+Ideally with a split button like overview. But that can be a future PR.
+Minimally, the action needs to exist, so a simple button should be enough.
+We could do the reboot / ignore pattern, but switch ignore to manage services, which would then show the services need restarting dialog. But we'd need to keep the system needs rebooting state with an action button, perhaps in a banner or alert in the software page and in the overview. Or we could make it a top-level shell thing (in another PR).
+
+
+
+
+
+I've bolded things which do not currently exist in the PR, at least from what I saw earlier today.
+Hopefully this helps provide a direction. Thanks for doing the groundwork of integration! I apologize for not putting this all together in a form like this already (I've been busy with other stuff).",Mistake,M07,Time Management Errors
+HE_114,Issue,https://github.com/OptimalBits/bull/issues/904#issuecomment-381733857,"sorry for the late response. Since 2 weeks passed since reporting, do you have any new insights? I do not really understand your description. getRepeatableJobs is just a method to get all the scheduled jobs, used for UIs and similar. Maybe you mean the method nextRepeatableJob ?",Mistake,M07,Time Management Errors
+HE_115,Pull Request,https://github.com/Unleash/unleash/pull/831#issuecomment-860891971,"Thanks for updating. Sorry about the jest migration, we just felt the need to get it done to have some more power for our tests 🔥",Mistake,M08,Inadequate Testing
+HE_116,Issue,https://github.com/microsoft/vscode/issues/52931#issuecomment-401076445,"Ahh sorry, I didn't thought about that. :-/ I totally understand that you have to revert this. With backward compatibility in mind, there is no easy way to extend the current behavior. Maybe we could use some other special char like ?, # to create some new extended behavior, which doesn't mess with the existing one.",Mistake,M08,Inadequate Testing
+HE_117,Issue,https://github.com/ghdl/ghdl/issues/1201#issuecomment-612095676,"Sorry, I meant remove comments in signal
+  signal mysig_wrong : rc_peripheral_2(params(0 to 4)(0 to 4));
+
+Just checked with latest commit, the bug is still there.",Mistake,M08,Inadequate Testing
+HE_118,Issue,https://github.com/vuejs/vue-next/issues/5#issuecomment-434330189,"Okay, this makes a lot more sense, sorry for the confusion. My understanding was based on a 2.x issue where their vNode data was not flat, which would mean all information even if extracted would be transferred as attributes if you did not empty data.attrs object as this information exists on both props and attrs.
+Now that it is flat, properties won't be transferred when extracting which will mitigate this issue.",Mistake,M09,Incorrect/Insufficient Configuration
+HE_119,Issue,https://github.com/firebase/FirebaseUI-Android/issues/182#issuecomment-256931814,"Hello, I must apologize: all our (my and my team's) problems were related to the keystore (thank you very much @samtstern ... without you we would have continued to try without success): one of our colleagues changed the SHA1 code on firebase for some personal trials (without warning us) and then we started to have problems.
+Even though I cannot understand why on one smartphone it worked even with the wrong key, now, after updating all key related settings (SHA1 on firebase, google-services.json in the app) the login works with all the devices.
+Thank you again and sorry!",Mistake,M09,Incorrect/Insufficient Configuration
+HE_120,Issue,https://github.com/netdata/netdata/issues/5520#issuecomment-467870200,"Ah, sorry, I manage to generate one default configuration file by removing netdata.conf and restarting again the daemon, and curl http://localhost:19999/netdata.conf. I think I've everything I need now.",Mistake,M09,Incorrect/Insufficient Configuration
+HE_121,Issue,https://github.com/angular/angular/issues/38544#issuecomment-679128044,"This is what I did exactly. Manually updating the specific version of peerDependencies in the specific package.json. The main package.json file has been updated automtically running ng update @angular/core @angular/cli. Any way, I also found out, that it's even not an issue with library version or it peerDependencies. In the library I did have a hard coded tanslatbale text with i18nKindOfID for an attribute. When I did remove it, it did work using ""optimization"": ""true"" in angular.json file. I don't know exactly the reason behind it, but removing it, id did remove the error.
+This was the text you mentioned in the beginning: Ihr Passwort muss mindestens....
+I apologize for too much noise. But Your hints did help me to localize the issue. I'll take care of the rest. Many Thanks!
+Please feel free to close the bug/Issue. THANKS!",Mistake,M09,Incorrect/Insufficient Configuration
+HE_122,Pull Request,https://github.com/apache/airflow/pull/5655#issuecomment-514744541,"LGTM pending travis, feel free to self-merge, sorry about this... maybe my PR didn't have CI enabled due to one of the recent issues with CI?",Mistake,M09,Incorrect/Insufficient Configuration
+HE_123,Issue,https://github.com/Homebrew/legacy-homebrew/issues/13819#issuecomment-7481075,The problem was my fault: I have a ~/.gyp/include.gypi that altered the v8 build. Removing this file fixed the problem.,Mistake,M09,Incorrect/Insufficient Configuration
+HE_124,Pull Request,https://github.com/fxsjy/jieba/pull/16#issuecomment-10707433,"Opps, I am sorry about that to trip your space at tail of each line. It's My emacs default settings.",Mistake,M09,Incorrect/Insufficient Configuration
+HE_125,Pull Request,https://github.com/openstreetmap/openstreetmap-website/pull/2272#issuecomment-504652406,"ok I have some good news. I was able solve the deployment problem mentioned on my previous comment. I forgot to change the volume mount point when I moved the docker-compose.yml to docker directory from root directory and docker was unable to find the files necessary. Silly mistake ruined my weekend 😶. But unfortunately haven't made any progress with rake test:db error yet.
+
+There's a few commandline things which are pretty important to having a useful development environment, such as:
+
+
+Running the test suite
+Running rake commands (e.g. for database migrations)
+Running the console
+Connecting to the database with psql
+
+
+I'd like to make sure all of these things are possible in the Dockerized development setup, since at the moment I only see mention of running the webserver. With Vagrant, for example, you can just vagrant ssh into the virtual machine and do all of these things.
+
+@gravitystorm  they all are possible but for some reason I have setback regarding the rake test:db command. Might have something to do with the UNIX socket vs Docker tpc connection as you have mentioned in your comment. And yes you can also use bash on all of them.
+
+If they are possible already (great!) then it would be worthwhile documenting how that works, since it's not obvious to me at least!
+
+I just went through the old PR (#1290) and found that @paulsturgess made a nice doc for docker usage. Will try to re-use/re-purpose that and push it asap. Cheers!",Mistake,M09,Incorrect/Insufficient Configuration
+HE_126,Issue,https://github.com/rust-lang/rust/issues/30867#issuecomment-173968772,"@arielb1
+Sorry for not replying. I'm afraid I still don't quite follow you, so let me try and work it out. First off, I guess you meant to have impl<T>, like so, and probably Fn<(&'a u32,)>:
+impl<T> Foo for Option<T> where
+    for<'a> T: Fn<(&'a u32,)>,
+    for<'a> <T as Fn<(&'a u32,)>>::Output: Sized
+{}
+
+// evaluate <Option<_> as Foo>
+I'm not quite sure what the last line means, but if we were to follow the model of the original problem, we'd start with something to prove like for<'a> Option<&'a X>: Foo. ""Opening"" the for and matching this against the impl yields:
+Option<$T> = Option<&'0 X>
+
+and hence T = &'0 X. This suggests that we would translate the where clauses on the impl to:
+for<'a> &'0 X: Fn<(&'a u32,)>
+for<'a> <&'0 X as Fn<(&'a u32,)>>::Output: Sized
+
+which we would could then cover back up as:
+for<'a, 'b> &'b X: Fn<(&'a u32,)>
+for<'a, 'b> <&'b X as Fn<(&'a u32,)>>::Output: Sized
+
+This all seems...OK. Ah, wait, I guess your point is that we would need to normalize the <&'b X as Fn<(&'a u32,)>>::Output. I feel like we have issues normalizing under for binders still, right?",Mistake,M10,Code Complexity Errors
+HE_127,Issue,https://github.com/bcosca/fatfree/issues/1160#issuecomment-527934522,"Oh you're right ... I though it was a typo.
+my mistake ... sorry
+thanks for the quick answer !",Mistake,M10,Code Complexity Errors
+HE_128,Issue,https://github.com/freescout-helpdesk/freescout/issues/308#issuecomment-583712580,"While that would be a better solution, would it not break the attachments for emails already sent as those would now require a token to be viewed? This was the main factor in my suggestion to use a database as old attachments could have a blank token in the database and would not need a token to be verified, where any new attachments would have a token added to the database.
+I haven't really looked too much into the code for how attachments are handled, so my apologies if I'm understanding this wrong. If the proposed solution could work without affecting emails that have already been sent, then that would be great.",Mistake,M10,Code Complexity Errors
+HE_129,Pull Request,https://github.com/bcit-ci/CodeIgniter/pull/1079#issuecomment-4375107,"OK ... sorry guys, but I guess my mind was somewhere else earlier today and I really didn't take a look at what this actually does. Now that I look at it ... I'm rather confused - this can't possibly work.
+_config_delimiters() doesn't have access to $rules - it's not a property, it's not passed by a parameter to the method and (thank God) it's not a global either.
+And why is a method even needed for that? It's protected, so it's not accessible from outside the class unless you extend it. And that also doesn't make sense, because it's only called by the constructor here, where the whole thing should actually be.
+Move those two if()s to the constructor and it's all OK.",Mistake,M10,Code Complexity Errors
+HE_130,Pull Request,https://github.com/vadimdemedes/ink/pull/193#issuecomment-491816216,"Sorry, incomplete would be more accurate. Using the information in the
+readme, I was unable to get anything running on the command line. Node is
+the target and this configurations works.
+
+If there is something else I’m missing you might consider adding it to the
+readme so other users are able to get this running. I’m just trying to be
+helpful and get people who may be less familiar with Babel up and going
+faster.
+…
+On Mon, May 13, 2019 at 1:21 AM Sindre Sorhus ***@***.***> wrote:
+ How exactly is it incorrect? The point of it is to transpile JSX, not to
+ transpile unsupported JS features in Node.js.
+
+ —
+ You are receiving this because you authored the thread.
+ Reply to this email directly, view it on GitHub
+ <#193 (comment)>, or mute
+ the thread
+ <https://github.com/notifications/unsubscribe-auth/AGLNES4E7BL46A7X3FU5WG3PVEQHTANCNFSM4HMLWCEQ>
+ .",Mistake,M10,Code Complexity Errors
+HE_131,Pull Request,https://github.com/keycloak/keycloak/pull/3831#issuecomment-289956126,"I'm sorry. When merging, inserted Japanese characters accidentally. I've already fixed.",Mistake,M11,Internationalization/String Encoding Errors
+HE_132,Issue,https://github.com/prettier/prettier/issues/5956#issuecomment-472167822,"@kachkaev Ah, ok. I was getting a little confused, thinking it would affect the string length, but you're right. \ in a string doesn't count against it, because it's just indicating that it should escape the next character. Sorry about the confusion.",Mistake,M11,Internationalization/String Encoding Errors
+HE_133,Pull Request,https://github.com/zephyrproject-rtos/zephyr/pull/16969#issuecomment-504508952,"Do you feel like adding the handler time to BinaryHandler too? (Hopefully that is just another 2 extra lines)
+
+Sounds great however I don't know and don't use that handler now so I'd rather someone else do it in a different and actually tested commit. Sorry :-(",Mistake,M12,Inadequate Experience Errors
+HE_134,Pull Request,https://github.com/bioconda/bioconda-recipes/pull/1545#issuecomment-218988285,I'm still struggling with this. same problems. need to learn more programming skills...sure it's a simple thing we're missing. sorry for the unhelpful reply,Mistake,M12,Inadequate Experience Errors
+HE_135,Issue,https://github.com/microsoft/TypeScript/issues/1863#issuecomment-593901990,"@DanielRosenwasser my use case is similar to that of @aaronpowell - a seeming mismatch in the ProxyHandler interface and TypeScript's rules preventing me from properly typing proxy handler traps.
+A boiled down example demonstrating the issue:
+const getValue = (target: object, prop: PropertyKey) => target[prop]; // Error
+As far as I can tell, it's impossible to craft any type for target that will avert the error yet allow only objects that can legitimately be accessed by PropertyKey.
+I'm a TypeScript newbie so please forgive me if I'm missing something obvious.",Mistake,M12,Inadequate Experience Errors
+HE_136,Pull Request,https://github.com/openzfs/zfs/pull/11468#issuecomment-763093613,"It's possible that the BSD build failure is caused by fcntl macros being exposed by __BSD_VISIBLE
+
+For the moment, don't worry about the FreeBSD HEAD build failure.  PR #11458 has been opened to address it.  We're just waiting on an additional needed follow up fix before merging it.  Sorry about the inconvenience.",Mistake,M12,Inadequate Experience Errors
+HE_137,Pull Request,https://github.com/scikit-learn/scikit-learn/pull/1006#issuecomment-7629399,"On Aug 9, 2012, at 23:35 , Alexandre Gramfort notifications@github.com wrote:
+
+cython -a gives me some yellow lines that hurts my eyes :)
+
+I just learned about that moments before submitting the PR, sorry. It's still not obvious to me how to fix some of them.
+I can conclude that it's not cool to return an array, but I was gonna use an out= parameter anyway, so that's that. But what's with the RefNannyDeclarations that make all the lines where I declare a function go yellow?
+Should I aim for no yellow at all?
+
+—
+Reply to this email directly or view it on GitHub.
+
+
+Vlad N.
+http://vene.ro",Mistake,M12,Inadequate Experience Errors
+HE_138,Pull Request,https://github.com/gatsbyjs/gatsby/pull/23954#issuecomment-673797416,"You guys will have to excuse my ignorance on a couple of these things, I'm pretty new to contributing to Gatsby.
+After changing import { graphql } from ""gatsby"" to import graphql from ""gatsby/graphql"" like @vladar suggested, I'm getting a new error.
+
+I thought this meant I have to do npm install in the packages/gatsby directory, but doing that gave me more errors:
+
+I'm super confused as to why none of these packages can be found. Is there something I'm missing here? I really want to get this PR moving along but I keep running into frustrating issues like this.",Mistake,M12,Inadequate Experience Errors
+HE_139,Issue,https://github.com/NightCatSama/vue-slider-component/issues/145#issuecomment-361254048,"I am sorry, I have not used that framework, can not judge where the error caused.
+It looks like the width of the table is reduced after the component is initialized.
+You initialize the first piece of data is dynamically rendered?",Mistake,M12,Inadequate Experience Errors
+HE_140,Issue,https://github.com/boltdb/bolt/issues/211#issuecomment-64838850,Sorry for the delay in getting back to this issue. It's difficult to fix this since I don't have a win32 machine. If anyone wants to PR a fix I'll certainly be happy to merge it.,Mistake,M13,Insufficient Tooling Access Errors
+HE_141,Pull Request,https://github.com/python/cpython/pull/17316#issuecomment-557762137,"Sorry, @jacksonriley and @methane, I could not cleanly backport this to 3.7 due to a conflict.
+Please backport using cherry_picker on command line.
+cherry_picker 138e7bbb0a5ed44bdd54605e8c58c8f3d3865321 3.7",Mistake,M13,Insufficient Tooling Access Errors
+HE_142,Pull Request,https://github.com/libpnet/libpnet/pull/114#issuecomment-147136440,"Sorry for my slow responses - I have very limited internet access at the moment.
+I'm fairly sure netmap doesn't work on the loopback interface out of the box, you'll need to play around with VALE or netmap pipes I think - I haven't done this myself, so I'm not sure.
+Are you running other things on your machine? Those numbers are incredibly low for the loopback interface. I'm unable to test to see what I'm getting right now, but ~880_000pps at 64 bytes per packet is only ~54MB/s - I'd expect far higher than that, even using the Linux backend.",Mistake,M13,Insufficient Tooling Access Errors
+HE_143,Issue,https://github.com/kubernetes-retired/external-storage/issues/1228#issuecomment-670455747,"Thanks for reporting the issue!
+This repo is no longer being maintained and we are in the process of archiving this repo. Please see kubernetes/org#1563 for more details.
+If your issue relates to nfs provisioners, please create a new issue in https://github.com/kubernetes-sigs/nfs-ganesha-server-and-external-provisioner or https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner.
+Going to close this issue in order to archive this repo. Apologies for the churn and thanks for your patience! 🙏",Mistake,M14,Workflow Order Errors
+HE_144,Issue,https://github.com/secdev/scapy/issues/535#issuecomment-283321691,"It's ok i've found a way of fixing this.
+Sorry for bothering",Mistake,M14,Workflow Order Errors
+HE_145,Pull Request,https://github.com/yiisoft/yii2/pull/13211#issuecomment-286410990,The issue will be solved but not with this pull request. Thanks for contributing and sorry that it's not merged.,Mistake,M14,Workflow Order Errors
+HE_146,Pull Request,https://github.com/MinecraftForge/MinecraftForge/pull/3545#issuecomment-404580613,Ah this one should be closed. Sorry for my error because the pull for 1.12 is already merged.,Mistake,M14,Workflow Order Errors
+HE_147,Pull Request,https://github.com/rwaldron/johnny-five/pull/693#issuecomment-90097148,Needs to be rebased. (Sorry about that),Mistake,M14,Workflow Order Errors
+HE_148,Pull Request,https://github.com/istio/istio/pull/3843#issuecomment-369681214,"greg my apologies - the bot merged my other PR
+can you
+make pull
+and redo
+make depend.update
+and redo (sorry!) 1 more time the vendor pr",Mistake,M14,Workflow Order Errors
+HE_149,Pull Request,https://github.com/nodejs/node-v0.x-archive/pull/25567#issuecomment-114735961,"Closing and retargeting to v0.10, my apologies.",Mistake,M14,Workflow Order Errors
+HE_150,Pull Request,https://github.com/openhab/openhab1-addons/pull/2120#issuecomment-74096523,"Bernd,
+Agreed, it will cause merge conflicts. The best option here is to wait for your PR #1997 to be merged. I was not aware of that PR, sorry.
+Deleting this one.",Mistake,M14,Workflow Order Errors
+HE_151,Pull Request,https://github.com/dotnet/aspnetcore/pull/18133#issuecomment-600116865,"@anurse
+@BrennanConroy
+As this PR does not have any Issue related, it does not appear in the release note of the 5.0-preview1
+It's my fault creating a PR without related issue.
+Not sure if it could / should be changed somehow
+I tried to check other PR labelled after 5.0-preview1 without linked issue ... but maybe you already have scanning code to detect that",Mistake,M14,Workflow Order Errors
+HE_152, ,https://github.com/signalapp/Signal-Android/issues/8571#issuecomment-544353977,"@mdaniel Hey there, thanks for continuing to look into this! It's very appreciated. I've got a version of this fix going out in 4.49.4.
+Apologies for the oversight of not cross posting logs and stuff. Unfortunately my mind is always split between the various Github, Forum, and Reddit issues (as well as the various features I'm working on), and that does sometimes lead to things slipping. I assure you it's not a result of malice, but just me being human. I encourage you to remind yourself of the human-ness of others when communicating online. I know this bug is frustrating, but hopefully this time around we'll get it for good :)",Mistake,M14,Workflow Order Errors
+HE_153,Pull Request,https://github.com/home-assistant/core/pull/12464#issuecomment-368342214,"Sorry for merging, should the media_player.braviatv platform contain both authentication methods? @gerard33 is this something you can take a look at?",Mistake,M14,Workflow Order Errors
+HE_154,Pull Request,https://github.com/cython/cython/pull/2954#issuecomment-493736827,"Ah, sorry, I didn't mean to backport the feature itself to 0.29.x. New features only go into master right now. I only wanted to have the necessary compile fixes, with zero pos-only args.",Mistake,M14,Workflow Order Errors
+HE_155,Pull Request,https://github.com/meteor/meteor/pull/464#issuecomment-10206460,"Ok, weird.  I undid my change and retyped it and everything seems to be working again.  Sorry about that.  Must have been a slight typo.",Slip,S01,Typos & Mispellings
+HE_156,Pull Request,https://github.com/serverless/serverless/pull/4701#issuecomment-388304886,"@kobim sorry I'm an idiot, I really did miss the space! Thank you very much! Sorry for bothering =)",Slip,S01,Typos & Mispellings
+HE_157,Issue,https://github.com/quasarframework/quasar/issues/10943#issuecomment-943598232,"It's not the right way to downgrade. Change only @quasar/app to the previous version
+""@quasar/app"": ""=3.1.2"",
+
+
+Oh sorry, let me do it again.",Slip,S01,Typos & Mispellings
+HE_158,Issue,https://github.com/flutter/flutter/issues/30619#issuecomment-482267920,It is `--compiler-passes` (plural) sorry for the typo.,Slip,S01,Typos & Mispellings
+HE_159,Issue,https://github.com/laravel/framework/issues/8382#issuecomment-91711551,Sorry but is ->orWhere(... inside the closure.,Slip,S01,Typos & Mispellings
+HE_160,Issue,https://github.com/roboll/helmfile/issues/119#issuecomment-384708075,"Nit but you want set_string to be just set in option 2 and 3, right?
+
+oops. Yes, that's what I meant.",Slip,S01,Typos & Mispellings
+HE_161,Issue,https://github.com/dotnet/tye/issues/277#issuecomment-606806219,"Sorry, my mistake",Slip,S01,Typos & Mispellings
+HE_162,Issue,https://github.com/arrayfire/arrayfire/issues/1966#issuecomment-336748250,"yes, sorry.
+I meant native_exp with input type double.
+
+""We use the generic type name gentype to indicate that the functions in table 6.9 can take
+float, float2, float3, float4, float8 or float16 as the type for the
+arguments.""
+
+opencl2.0-spec p.79
+The issue stands that it's not supported for input type double for some platforms without a clear way of checking for support.",Slip,S01,Typos & Mispellings
+HE_163,Pull Request,https://github.com/MarlinFirmware/Marlin/pull/3611#issuecomment-222489931,"Yeah, it realized it should be ""no one"" but thought it is funny 😄 And god, I made a spelling mistake in comment of spelling... weird :)",Slip,S01,Typos & Mispellings
+HE_164,Pull Request,https://github.com/nodejs/node/pull/6082#issuecomment-210212646,"Yeah, sorry ran this on windows.  I'll get this cleaned up.  Looks like whitespace/line-length issues.",Slip,S02,Syntax Errors
+HE_165,Pull Request,https://github.com/psf/requests/pull/2384#issuecomment-67621488,"This is incorrect behaviour, I'm afraid.
+The charset parameter is only defined for documents of type text/*. That does not apply to application/x-www-form-urlencoded. Therefore, sending charset would be a specification violation.
+Our behaviour is consistent with the W3C HTML5 specification, which says the following:
+
+If the form element has an accept-charset attribute, let the selected character encoding be the result of picking an encoding for the form.
+Otherwise, if the form element has no accept-charset attribute, but the document's character encoding is an ASCII-compatible character encoding, then that is the selected character encoding.
+Otherwise, let the selected character encoding be UTF-8.
+
+We can't do either of the first two things because we don't know what the document or form looks like, so we can only do the third. If the user wants a different behaviour (per the first two points) they are required to do it themselves.
+I'm sorry we can't accept this, but this is one of those things that seems like it should be simple but is actually quite complex.",Slip,S03,Overlooking Documented Information
+HE_166,Pull Request,https://github.com/renovatebot/renovate/pull/5694#issuecomment-597701559,"@viceice Sorry, not sure how I missed that one 👍 I'll close this one.",Slip,S03,Overlooking Documented Information
+HE_167,Pull Request,https://github.com/shogun-toolbox/shogun/pull/2101#issuecomment-39718305,"@vigsterkr Sorry, my fault. I reverted this in #2108
+@ahcorde You probably did not know that, but as Viktor said, we require you to send notebooks with output removed (not in the gist link though). Also, the jpg file should go into shogun-data. This should be quick to clean up.",Slip,S03,Overlooking Documented Information
+HE_168,Issue,https://github.com/psf/requests/issues/4911#issuecomment-447129112,"Bah, should have checked for pull requests too. Sorry!",Slip,S03,Overlooking Documented Information
+HE_169,Issue,https://github.com/gorhill/uBlock/issues/1099#issuecomment-166675717,"My mistake, sorry.",Slip,S03,Overlooking Documented Information
+HE_170,Issue,https://github.com/StackExchange/blackbox/issues/178#issuecomment-271319129,"Turns out I had forgotten to do the very last step of setting up a subkey (selecting the new key and removing the password). Oops... Deploy hook is working beautifully now.
+Thanks for all your help, @tlimoncelli!",Slip,S03,Overlooking Documented Information
+HE_171,Issue,https://github.com/ventoy/Ventoy/issues/164#issuecomment-634426078,"Solved, had read recently issue #145 and now it works. It's a problem with Acronis and the Active Protection,
+Sorry for disturbing
+Axel",Slip,S03,Overlooking Documented Information
+HE_172,Issue,https://github.com/haugene/docker-transmission-openvpn/issues/1087#issuecomment-602289155,"Sorry, but wiki I mean documentation, linked in read me
+…
+On Mon, Mar 23, 2020 at 7:48 realcanadrian ***@***.***> wrote:
+ [image: Screen Shot 2020-03-22 at 16 47 20]
+ <https://user-images.githubusercontent.com/19540360/77263045-e26ff300-6c5c-11ea-855a-97628c54981b.png>
+ This is the wiki. I'm looking at it. There's literally nothing here. Are
+ you talking about something else?
+
+ —
+ You are receiving this because you commented.
+ Reply to this email directly, view it on GitHub
+ <#1087 (comment)>,
+ or unsubscribe
+ <https://github.com/notifications/unsubscribe-auth/AA7OFYQL7FEU4ZUWZBSNSNLRI2IUVANCNFSM4LRNGS7Q>
+ .",Slip,S03,Overlooking Documented Information
+HE_173,Pull Request,https://github.com/Dogfalo/materialize/pull/5420#issuecomment-410466673,I just do not really understand how github works. Excuse me. Do you want to create a pull for v1 dev?,Slip,S03,Overlooking Documented Information
+HE_174,Issue,https://github.com/golang/go/issues/27075#issuecomment-414089565,"@smyrman Sorry, I did not realize your OP included an example. I was multitasking and so was not careful enough.
+I think, as you are realizing, what started as a solution for tedious error handling is trying to become a general purpose construct.  It might be trying to do too much.  But I'll humor you and assume it makes sense to do this route. (Ironically, even though @networkimprov doesn't like this proposal, his comment helped me conceptualize what you are trying to do.)
+If the break condition includes a variable comparison, it evaluates when the variable changes. If the condition contains a function call it is also evaluates on every assignment, every control structure condition evaluation and upon every return from a func call, but only once if the return is also an assignment or a control structure condition evaluation.
+And if the condition is time consuming then you should restructure your code so that you do not use a time consuming condition with this construct. Instead, use an if statement where you want to evaluate it.",Slip,S03,Multitasking Errors
+HE_175,Issue,https://github.com/line/armeria/issues/2911#issuecomment-660793999,"To clarify, gRPC web also supports streams, just not the Google official client library. gRPC web text was added to support streams on IE10 IIRC.
+
+Oops, I thought gRPC web doesn't support the server-side streams. Thanks for clarifying that.
+
+That doesn't mean Armeria shouldn't support it but should be clear on the motivation
+
+It was just me that wanted to understand how gRPC works internally by implementing this feature. 😄
+Let me work on this. If there's a regression on performance or design, I will abandon it.",Slip,S03,Overlooking Documented Information
+HE_176,Issue,https://github.com/microsoft/TypeScript/issues/14600#issuecomment-458168728,"I recently stumbled upon this issue, when I needed to use static method in an interface. I apologize, if this has already been addressed before, as I do not have time to read through this amount of comments.
+My current problem: I have a private .js library, that I want to use in my TypeScript project. So I went ahead and started writing a .d.ts file for that library, but as the library uses static methods, I could not really finish that. What is the suggested approach in this case?
+Thanks for answers.",Slip,S03,Overlooking Documented Information
+HE_177,Issue,https://github.com/UnevenSoftware/LeafPic/issues/245#issuecomment-272311667,@ContactFront Ah sorry i didn't saw the phone model. But it's the case here for me when i have the same folder on both (with different images),Slip,S03,Overlooking Documented Information
+HE_178,Issue,https://github.com/rustwasm/wasm-pack/issues/341#issuecomment-423835905,"This is a dupe of #272, my apologies!",Slip,S03,Overlooking Documented Information
+HE_179,Pull Request,https://github.com/godotengine/godot/pull/32518#issuecomment-537903490,"Oh, I missed that sorry.
+My PR has an extra platform and some fixes to release resources properly so if the changes are ok I would say this one.",Slip,S03,Overlooking Documented Information
+HE_180,Pull Request,https://github.com/flutter/flutter/pull/67860#issuecomment-706820974,"Sorry, I failed to notice that some of the framework tests are failing. Could you make sure that the other tests that use Alignment.toString are fixed as well?",Slip,S03,Overlooking Documented Information
+HE_181,Issue,https://github.com/plotly/plotly.py/issues/2618#issuecomment-655756457,"what did we do before for more than 4 colors? Sorry, I'm not following the before vs after :)",Slip,S03,Overlooking Documented Information
+HE_182,Pull Request,https://github.com/reddit-archive/reddit/pull/1466#issuecomment-232747942,"@Deimos 💇 sorry, didn't see this in my messages, was just going through the listing. Fixed.",Slip,S03,Overlooking Documented Information
+HE_183,Issue,https://github.com/laravel/framework/issues/20843#issuecomment-326062471,"composer global update
+edit:
+oops sorry. didn't read the whole thing",Slip,S03,Overlooking Documented Information
+HE_184,Pull Request,https://github.com/prettier/prettier/pull/4#issuecomment-270924856,"Does this convert
+const a = foo.callMethod();
+to
+const a = (
+  foo
+    .callMethod()
+);
+Edit: Sorry forgot to look at tests.",Slip,S03,Overlooking Documented Information
+HE_185,Issue,https://github.com/golang/go/issues/17874#issuecomment-262144735,"Oops, the Gobot hadn't tagged this issue so I mailed a dupe CL https://go-review.googlesource.com/c/33434, @bradfitz's is ready to go, so I'll abandon mine :)",Slip,S03,Overlooking Documented Information
+HE_186,Issue,https://github.com/chef/chef/issues/5593#issuecomment-264295140,"Sorry, missed that. I'll take a look as time allows, but the main issue that was contributing to this should be fixed. Thanks again for the report!",Slip,S03,Overlooking Documented Information
+HE_187,Pull Request,https://github.com/cakephp/cakephp/pull/2582#issuecomment-32075877,"I hope I have fixed all my mistakes now. Sorry for all the overhead, I will try to do it better next time! :)",Slip,S03,Overlooking Documented Information
+HE_188,Pull Request,https://github.com/ccxt/ccxt/pull/4581#issuecomment-459028068,"Sorry for mixing up 2 fixes, that was not intended
+Traceback (most recent call last):
+ File ""/usr/src/app/live/exchange.py"", line 488, in cancel_order_async
+    result = await self._cancel_order(order.id, order.symbol)
+  File ""/usr/src/app/live/exchange.py"", line 774, in call
+    result = await getattr(self.exchange, method)(*args)  File ""/usr/local/lib/python3.7/site-packages/ccxt/async_support/cobinhood.py"", line 558, in cancel_order
+    }, params))
+  File ""/usr/local/lib/python3.7/site-packages/ccxt/async_support/base/exchange.py"", line 116, in fetch2
+    return await self.fetch(request[\'url\'], request[\'method\'], request[\'headers\'], request[\'body\'])
+  File ""/usr/src/app/ccxt_extended/__init__.py"", line 15, in fetch\n    result = await f(url, method, headers, body)
+  File ""/usr/local/lib/python3.7/site-packages/ccxt/async_support/base/exchange.py"", line 164, in fetch\n    self.handle_errors(response.status, response.reason, url, method, headers, http_response, json_response)
+  File ""/usr/local/lib/python3.7/site-packages/ccxt/async_support/cobinhood.py"", line 782, in handle_errors
+    raise InvalidOrder(feedback)
+ccxt.base.errors.InvalidOrder: cobinhood {""success"":false,""error"":{""error_code"":""parameter_error""},""request_id"":""21d1b576b5582290""}",Slip,S04,Multitasking Errors
+HE_189,Issue,https://github.com/sequelize/sequelize/issues/4384#issuecomment-134220580,"Sorry, reopening until I add the PR.",Slip,S05,Hardware Interaction Errors
+HE_190,Pull Request,https://github.com/laurent22/joplin/pull/2272#issuecomment-586657810,"I'm on macOS and Opt+Shift+J works perfectly. I made a mistake above with the second shortcut (I'll update it in a sec).
+If it doesn't work for you, maybe you have another global shortcut defined?",Slip,S05,Hardware Interaction Errors
+HE_191,Issue,https://github.com/jhipster/generator-jhipster/issues/4674#issuecomment-267571737,"Sorry I closed this by mistake.
+So here is the current state:
+
+I'm doing one last (0.0.6) release, and for me the library should be OK
+The vote on Twitter is quite clear, for using the library, then there is an important share of people which are unhappy.
+The more I use it, the better I find it. It definitely cleans up the generated application from a lot of hacks/tuning that people will call ""verbose"". I'm quite convinced it's a better option.
+My main issue is that JHipster is transforming from a simple generator to a real framework. But I think that was bound to happen, given everything we do.
+
+I hope everybody is happy if I merge this soon! Please comment or react with emoticons!",Slip,S05,Hardware Interaction Errors
+HE_192,Issue,https://github.com/netz98/n98-magerun/issues/105#issuecomment-15890362,Sorry. Wrong ticket....,Slip,S05,Hardware Interaction Errors
+HE_193,Issue,https://github.com/netbox-community/netbox/issues/2415#issuecomment-419904693,D'Oh. Wrong button. Sorry about that.,Slip,S05,Hardware Interaction Errors
+HE_194,Issue,https://github.com/eclipse/mosquitto/issues/1468#issuecomment-545299579,"The connect does not have a topic alias maximum property in the above trace.
+
+You're absolutely correct - I had unfortunately copied the wrong wireshark trace.... sorry about that. I've updated the issue with the correct one.",Slip,S05,Hardware Interaction Errors
+HE_195,Issue,https://github.com/enzymejs/enzyme/issues/733#issuecomment-267525729,Sorry for this... I didn't want to submit a new issue... and I have no idea how this could have happened (I think I was typing in the site address bar of chrome).,Slip,S05,Hardware Interaction Errors
+HE_196,Pull Request,https://github.com/yarnpkg/yarn/pull/6409#issuecomment-423533596,"Wait, sorry, missed that the yarn audit command already exists with your PR; so basically the only change I'd suggest would be to run it by default on yarn add (and filter out the existing errors), but that's your call 😃
+I'd also maybe suggest to make --audit on install prompt the user at install-time when they would install a vulnerable packages (before they're actually installed).",Slip,S06,Overlooking Proposed Code Changes
+HE_197,Pull Request,https://github.com/thoughtbot/shoulda-matchers/pull/386#issuecomment-36398943,Sorry I missed this earlier. I think this is a good solution for the problem. Only minor notes.,Slip,S06,Overlooking Proposed Code Changes
+HE_198,Issue,https://github.com/pytransitions/transitions/issues/147#issuecomment-253374319,"Sorry, I also missed this. +1 on both ideas as well. And also +1 on @wtgee's suggestion to not display auto_transitions by default, and call the flag display_auto_transitions (or maybe show_auto_transitions).",Slip,S06,Overlooking Proposed Code Changes
+HE_199,Pull Request,https://github.com/spring-projects/spring-boot/pull/19149#issuecomment-558991916,"Oops, good catch!",Slip,S08,General Slip
+HE_200,Pull Request,https://github.com/dangrossman/daterangepicker/pull/622#issuecomment-92328148,"Sorry, wrong repo",Slip,S08,General Slip
